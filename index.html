@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Proyecto - Máquina de Burbujas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- menu -->
+
+  <div class="navbar-fixed" id="Inicio">
+      <nav class="blue darken-1 nav-extended">
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo hide-on-med-and-down center">Proyecto: Maquina de burbujas</a>
+            <a href="#" class="brand-logo hide-on-small-only hide-on-large-only center">Maquina de burbujas</a>
+            <a href="#" class="brand-logo hide-on-med-and-up center">Burbujas</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+   
+          </div>
+          <div class="nav-content hide-on-med-and-down">
+            <ul class="tabs ">
+                <li class="tab black-text"><a class="black-text" href="#Integrantes">Integrantes</a></li>
+                <li class="tab"><a class="black-text" href="#Objetivo">Objetivo</a></li>
+                <li class="tab"><a class="black-text" href="#Descripcion">Descripción</a></li>
+                <li class="tab"><a class="black-text" href="#Componentes">Componentes</a></li>
+                <li class="tab"><a class="black-text" href="#Diagrama">Diagrama</a></li>
+                <li class="tab"><a class="black-text" href="#Implementacion">Implementación</a></li>
+                <li class="tab"><a class="black-text" href="#Codigo">Código</a></li>
+                <li class="tab"><a class="black-text" href="#Explicacion">Explicación</a></li>
+                <li class="tab"><a class="black-text" href="#Videos">Vídeo</a></li>
+                <li class="tab"><a class="black-text" href="#Conclusiones">Conclusiones</a></li>
+                <li class="tab"><a class="black-text" href="#Referencias">Referencias</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <ul class="sidenav show-on-medium-and-up" id="mobile-demo">
+          <!-- MENU EN MOBILE-->
+          <li><a href="#Integrantes">Integrantes</a></li> 
+          <li><a href="#Objetivo">Objetivo</a></li>
+          <li><a href="#Descripcion">Descripción</a></li>
+          <li><a href="#Componentes">Componentes</a></li>
+          <li><a href="#Diagrama">Diagrama</a></li>
+          <li><a href="#Implementacion">Implementación</a></li>
+          <li><a href="#Codigo">Código</a></li>
+          <li><a href="#Explicacion">Explicación</a></li>
+          <li><a href="#Videos">Vídeo</a></li>
+          <li><a href="#Conclusiones">Conclusiones</a></li>
+          <li><a href="#Referencias">Referencias</a></li>
+        </ul>
+      
+  </div>
+<!-- fin menu prueba-->
+      
+<div  class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br><br><br>
+        <h1 class="header center text-lighten-2 ">Proyecto: Máquina de Burbujas</h1>
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/3.jpeg" alt="Proyecto Arduino"></div>
+  </div>
+
+
+<!--   
+COLORES: https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=FAFAFA&secondary.color=1976D2
+https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=FAFAFA&secondary.color=1976D2&primary.text.color=000000
+-->
+<!-- integrantes -->
+<div class="container scrollspy" id="Integrantes">
+  <div class="section">  
+    <div class="row">        
+      <div class="col s12">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-2"><i class="material-icons">account_circle</i></h2>
+            <h4 class="center">Integrantes</h4>  
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m8 offset-m2 l6">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="images/icon-woman.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  Pryscila Angelica Flores Galarza
+                </span>
+              </div>
+            </div>
+          </div>
+      </div>  
+      <div class="col s12 m8 offset-m2 l6">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="images/icon-jamir.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                    Jamir Angel Guevara Barturen
+                  </span>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="col s12 m8 offset-m2 l6">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="images/icon-cristian.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                    Cristian Frank Mercado Torres  
+                </span>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <!-- div class="col s12 m8 offset-m2 l6">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="images/icon-crispin.png" alt="" class="circle responsive-img"> 
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                    Edgar Junior Crispin Meza
+                </span>
+              </div>
+            </div>
+          </div>
+      </div--> 
+
+    </div>
+  </div>
+</div> 
+<!-- FOTO 1 -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/1.jpeg" alt="PROYECTO ARDUINO"></div>
+  </div>
+<!-- OBJETIVO icon ya -->
+  <div class="container scrollspy" id="Objetivo">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">star</i>
+                    </h2>
+                    <h4>Objetivo del Proyecto</h4>
+                    <p class="left-align">El presente proyecto tiene como objetivo plasmar lo aprendido en el curso de Arquitectura de Computadoras, al poner en funcionamiento la máquina de burbujas, a través de la placa de Arduino, el código, sensores y los demás componentes a usar, para lograr una adecuada ejecución.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- FOTO 2 -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/2.jpeg" alt="PROYECTO ARDUINO"></div>
+  </div>
+    
+<!-- DESCRIPCION icon ya-->    
+  <div class="container scrollspy" id="Descripcion">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">notes</i>
+                    </h2>
+                    <h4>Descripción del Proyecto</h4>
+                    <p class="left-align">La máquina de burbujas genera burbujas al presionar uno de los dos botones, el primer botón permite un funcionamiento continuo, mientras que el segundo botón realizara una única secuencia. Luego de presionar uno de los dos botones, el sensor ultrasonido verificara la distancia con el agua para las burbujas, si el agua tiene una altura adecuada los servos moverán el brazo del burbujero hasta que se remoje en el agua y se coloque a la altura del ventilador. El ventilador se encenderá por unos segundos para generar las burbujas, luego de un tiempo se apagara, finalizando la secuencia.
+                      </p><p>
+  
+                        Para la elaboración del proyecto se tuvieron que conseguir los implementos a usar, así como el esquema de la conexión de los componentes para luego hacer el armado y la prueba de funcionamiento con el código que subimos a nuestro Arduino.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<!-- FOTO 3-->    
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/3.jpeg" alt="Unsplashed background img 3"></div>
+  </div>
+    
+ <!-- LISTA DE COMPONENTES icon ya -->    
+  <div class="container scrollspy" id="Componentes">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">check_circle</i>
+                    </h2>
+                    <h4>Lista de componentes utilizados</h4>                   
+                  <div class="col s12 m6">
+                    <ul class="collection ">
+                      <li class="collection-item avatar">
+                        <img src="images/arduino.jpg" alt="" class="circle">
+                        <div class="section no-pad-bot"></div>
+                        <p>1 Arduino UNO</p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="images/protoboard.jpg" alt="" class="circle">
+                        <div class="section no-pad-bot"></div>
+                        <p>1 Protoboard</p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="images/buzzer.jpg" alt="" class="circle">
+                        <div class="section no-pad-bot"></div>
+                        <p>1 Buzzer de 5V (Piezo buzzer)</p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="images/ultrasonido.jpg" alt="" class="circle">
+                        <div class="section no-pad-bot"></div>
+                        <p>1 Módulo de ultrasonido (HC-SR04)</p>
+                      </li>
+                      <li class="collection-item avatar">
+                          <img src="images/ventilador.jpg" alt="" class="circle">
+                          <div class="section no-pad-bot"></div>
+                          <p>1 Ventilador de PC (12v)</p>
+                        </li>
+                        <li class="collection-item avatar">
+                          <img src="images/fuente.jpg" alt="" class="circle">
+                          <div class="section no-pad-bot"></div>
+                          <p> 1 fuente de alimentación (12v)</p>
+                        </li>
+                        <li class="collection-item avatar">
+                          <img src="images/condensador.jpg" alt="" class="circle">
+                          <div class="section no-pad-bot"></div>
+                          <p>2 Condensadores tubulares de 100mF (H252M)</p>
+                        </li>
+                        <li class="collection-item avatar">
+                          <img src="images/resistencia2.jpg" alt="" class="circle">
+                          <div class="section no-pad-bot"></div>
+                          <p>2 Resistencias de 220 ohmnios (para leds)</p>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="images/resistencia1.jpg" alt="" class="circle">
+                            <div class="section no-pad-bot"></div>
+                            <p>2 Resistencias de 10k ohmnios(para pulsadores)</p>
+                          </li>
+                    </ul>
+                  </div>
+                  <div class="col s12 m6">
+                      <ul class="collection ">
+                          <li class="collection-item avatar">
+                              <img src="images/servo.png" alt="" class="circle">
+                              <div class="section no-pad-bot"></div>
+                              <p>2 Servos (sm-s23095)</p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="images/pulsadores.jpg" alt="" class="circle">
+                              <div class="section no-pad-bot"></div>
+                              <p>2 Pulsadores</p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="images/relee.jpg" alt="" class="circle">
+                              <div class="section no-pad-bot"></div>
+                              <p>1 Relee (srd-05vdc-sl-c)</p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="images/led_rojo.jpg" alt="" class="circle">
+                              <div class="section no-pad-bot"></div>
+                              <p>1 Led Rojo</p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="images/led_verde.jpg" alt="" class="circle">
+                                <div class="section no-pad-bot"></div>
+                                <p>1 Led Verde</p>
+                              </li>
+                              <li class="collection-item avatar">
+                                <img src="images/goma.jpg" alt="" class="circle">
+                                <div class="section no-pad-bot"></div>
+                                <p>  Goma</p>
+                              </li>
+                              <li class="collection-item avatar">
+                                <img src="images/caja_carton.jpg" alt="" class="circle">
+                                <div class="section no-pad-bot"></div>
+                                <p> Cartón </p>
+                              </li>
+                              <li class="collection-item avatar">
+                                <img src="images/pompero.jpg" alt="" class="circle">
+                                <div class="section no-pad-bot"></div>
+                                <p>Burbujero</p>
+                              </li>
+                              <li class="collection-item avatar">
+                                  <img src="images/ligas.jpg" alt="" class="circle">
+                                  <div class="section no-pad-bot"></div>
+                                  <p>Ligas</p>
+                                </li>
+                      </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<!-- FOTO 4 -->  
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/4.jpeg" alt="CONEXIONES"></div>
+  </div>
+
+
+<!-- DIAGRAMA DE CONEXIONES -->
+  <div class="container scrollspy" id="Diagrama">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">build</i>
+                    </h2>
+                    <h4>Diagrama de conexiones</h4>
+                    <br>
+                    <img class="responsive-img" src="images/diagrama.jpg">
+                    <p class="center-align">Tomado de http://tecnovadores.blogspot.com</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- VIDEO DE IMPLEMENTACION -->
+  <div class="section black scrollspy" id="Implementacion">
+    <div class="row center container section no-pad-bot">
+      <div class="col s12 section no-pad-bot">
+        <div class="section no-pad-bot"></div>
+          <div class="video-container">
+            <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/1ivhp-d1lF4" frameborder="0" allowfullscreen>
+            </iframe>         
+          </div>
+        </div>
+      <h5 class="header col s12 light center-align white-text">Vídeo de implementación del proyecto</h5>
+    </div>
+  </div>
+    
+ <!-- CODIGO icon ya -->   
+  <div class="container scrollspy" id="Codigo">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">code</i>
+                    </h2>
+                    <h4>Código utilizado</h4>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOQUE DE CODIGGO 1-->    
+        <div class="col s12 m8 offset-m2  l8 offset-l2" >
+            <div class="card-panel grey lighten-3 ">
+
+                <code class=" language-markup">
+                  <span class="token tag">
+                    //Burbujero.ino
+                      <br>#include &lt;<!---->Servo.h>
+                      <br> #include "Notas.h"
+                          
+                      <br>Servo servoHorizontal, servoVertical;
+                          
+                         <br> int anguloVerticalArriba = 90;
+                         <br> int anguloVerticalAbajo =20;
+                         <br> int anguloVerticalVentilador = 44;
+                         <br> int anguloHorizontalOrigen = 0;
+                         <br> int anguloHorizontalFinal = 70;
+                         <br> int boton1uso, botonContinuo;
+                         <br> int pinBoton1Uso = 2;
+                         <br> int pinBotonContinuo = 4;
+                         <br> int pinRele = 11;
+                         <br> int triggerPin = 5;
+                         <br> int echoPin = 6;
+                         <br> int nivelAguaOK = 8;//cm
+                         <br> int distanciaActual = 0;
+                         <br> int pinVerde = 8;
+                         <br> int pinRojo = 3;
+                         <br> int speakerPin = 12;
+                          
+                         <br> void setup() {
+                          
+                          <br>//Configuracion se los pin de los servo.
+                          <br>servoHorizontal.attach(9); 
+                          <br> servoVertical.attach(10);
+                          
+                          <br> // Se abre el monitor serie.
+                          <br> Serial.begin(9600); 
+                          
+                          <br>//Configuracion de los pin de los botones
+                            <br>pinMode(pinBoton1Uso, INPUT);
+                            <br>pinMode(pinBotonContinuo, INPUT);
+                            <br>pinMode(pinRele, OUTPUT);
+                            <br>pinMode(LED_BUILTIN, OUTPUT);
+                            <br>pinMode(triggerPin,OUTPUT);
+                            <br>pinMode(echoPin,INPUT);
+                            <br>pinMode(pinVerde,OUTPUT);
+                            <br>pinMode(pinRojo,OUTPUT);
+                            <br>pinMode(speakerPin, OUTPUT);
+                            <br>retornoPosicionInicial();
+                            <br> }
+                          
+                            <br>void loop() {
+                          
+                              <br>boton1uso = digitalRead(pinBoton1Uso);
+                              <br>botonContinuo = digitalRead(pinBotonContinuo);
+                          
+                              <br> distanciaActual = comprobarRecipiente();
+                              <br>     Serial.print("Distancia: ");
+                              <br>   Serial.println(distanciaActual);
+                              <br> if(distanciaActual < nivelAguaOK){
+                          
+                                <br> //Notificamos el nivel de líquido válido con el led.
+                                <br> digitalWrite(pinVerde, HIGH);
+                                <br>digitalWrite(pinRojo, LOW);
+                              
+                                <br>Serial.print("Distancia Correcta: ");
+                                <br> Serial.println(distanciaActual);
+                                <br> if(boton1uso == HIGH){
+                                  <br>   ejecutarCiclo();
+                                  <br> }
+                                  <br> else if(botonContinuo == HIGH){
+                                    <br>   //NO-NADA
+                                    <br>    tone(speakerPin, NOTE_G4);
+                                    <br> delay(1000);
+                                    <br> noTone(speakerPin);
+                                    <br>  delay(1000);
+                                    <br> botonContinuo = digitalRead(pinBotonContinuo);
+                                    <br> while(botonContinuo == LOW){
+                                      <br> ejecutarCiclo();
+                                      <br> digitalWrite(pinRojo, HIGH);
+                                      <br> delay(2000);
+                                      <br>botonContinuo = digitalRead(pinBotonContinuo);
+                                      <br> digitalWrite(pinRojo, LOW);
+                                      <br> delay(2000);
+                                      <br> }
+                                      <br> }
+                                      <br> }else{
+                                        <br>  //Tocar la campana
+                                        <br> digitalWrite(pinVerde, LOW);
+                                        <br> digitalWrite(pinRojo, HIGH);
+                              
+                                        <br>}
+                                        <br> }
+                          
+                                        <br> void ejecutarCiclo(){
+                                          <br>  //Encendemos el led para indicar que se ejecuta el ciclo
+                                          <br> digitalWrite(LED_BUILTIN, HIGH);
+                                          <br>  //Mover servo vertical
+                                          <br> servoVertical.write(anguloVerticalAbajo); //Abajo
+                                          <br> delay(2000);
+                                          <br>servoVertical.write(anguloVerticalArriba); //Arriba
+                                          <br> delay(1000);
+                                          <br> //Mover servo horizontal
+                                          <br> servoHorizontal.write(anguloHorizontalFinal); //Final
+                                <br> delay(1000);
+                                <br> //Lo volvemos a bajar para el ventilador
+                               <br> servoVertical.write(anguloVerticalVentilador);
+                               <br> //Iniciar ventilador
+                               <br> delay(1000);
+                               <br> digitalWrite(pinRele, HIGH);
+                               <br> //Para ventilador
+                               <br> //delay(10000);
+                               <br> GameOfThrones();
+                               <br> digitalWrite(pinRele, LOW);
+                               <br> //Melodía
+                          <br>
+                               <br> //Retorna vertical
+                               <br> servoVertical.write(anguloVerticalArriba); //Arriba
+                               <br> delay(1000);
+                               <br> //Retorna horizontal
+                               <br> servoHorizontal.write(anguloHorizontalOrigen); //Final
+                               <br> delay(1500);
+                               <br> //Apagamos el led para indicar el fin de ciclo
+                               <br> digitalWrite(LED_BUILTIN, LOW);
+                         <br> }
+                          
+                         <br> void retornoPosicionInicial(){
+                         <br>   servoVertical.write(anguloVerticalArriba);
+                          <br>  servoHorizontal.write(anguloHorizontalOrigen);
+                         <br>   digitalWrite(pinRele, LOW);
+                          <br>  digitalWrite(LED_BUILTIN, LOW);
+                          <br>  digitalWrite(triggerPin, LOW);
+                          <br>  //pulseIn(EchoPin, LOW);
+                          <br>  digitalWrite(pinVerde, LOW);
+                          <br>  digitalWrite(pinRojo, LOW);
+                         <br> }
+                         <br>
+                         <br>int comprobarRecipiente() {
+                          <br>long duracion, distanciaCm;
+                          <br> 
+                            //Lanzamos un pulso
+                            <br>digitalWrite(triggerPin, LOW);
+                            <br>delayMicroseconds(4);
+                            <br>digitalWrite(triggerPin, HIGH);
+                            <br>delayMicroseconds(10);
+                            <br>digitalWrite(triggerPin, LOW);
+                            <br>                          
+                            <br>//Medimos el tiempo de respuesta en <br>microsegundos
+                            <br>duracion = pulseIn(echoPin, HIGH); 
+                            <br>
+                            <br>//Convertimos a distancia, en cm ** <br>Distancia=(Tiempo/Velocidad)/2 ** 
+                            <br>distanciaCm = duracion * 10 / 292/ 2;   <br>//El sonido tarda 29,2 microsegundos en recorrer un centímetro.
+                            <br>return distanciaCm;
+                            <br>}
+                            <br>
+                            <br>//Melodía Game of Thrones
+                            <br>void GameOfThrones() {
+                              <br>tone(speakerPin, NOTE_G4);
+                              <br>delay(1500);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_C4);
+                              <br>delay(1500);
+                              <br>
+                              <br>     tone(speakerPin, NOTE_E4);
+                              <br>delay(250);
+                              <br>
+                              <br>tone(speakerPin, NOTE_F4);
+                              <br>delay(250);
+                              <br>
+                              <br>tone(speakerPin, NOTE_G4);
+                              <br>delay(1000);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_C4);
+                              <br>delay(1000);
+                              <br>
+                              <br>tone(speakerPin, NOTE_DS4);
+                              <br>delay(250);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_F4);
+                              <br>delay(250);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_D4);
+                              <br>delay(500);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_G3);
+                              <br>delay(500);
+                              <br>noTone(speakerPin);
+                              <br>
+                              <br>tone(speakerPin, NOTE_AS3);
+                              <br>delay(250);
+                              <br>noTone(speakerPin);
+                              <br>                          
+                              <br>tone(speakerPin, NOTE_C4);
+                              <br>delay(250);
+                              <br>noTone(speakerPin);
+                              <br>}
+                              <br>
+                  </span>
+                </code>
+            </div>
+        </div>
+        <!-- BLOQUE DE CODIGO 2-->    
+            <div class="col s12 m8 offset-m2  l8 offset-l2" >
+              <div class="card-panel grey lighten-3 ">
+
+                  <code class=" language-markup">
+                    <span class="token tag">
+                          //Notas.h  
+                        <br> #define NOTE_B0  31
+                        <br> #define NOTE_C1  33
+                        <br> #define NOTE_CS1 35
+                        <br> #define NOTE_D1  37
+                        <br> #define NOTE_DS1 39
+                        <br> #define NOTE_E1  41
+                        <br> #define NOTE_F1  44
+                        <br> #define NOTE_FS1 46
+                        <br> #define NOTE_G1  49
+                        <br> #define NOTE_GS1 52
+                        <br> #define NOTE_A1  55
+                        <br> #define NOTE_AS1 58
+                        <br> #define NOTE_B1  62
+                        <br> #define NOTE_C2  65
+                        <br> #define NOTE_CS2 69
+                        <br> #define NOTE_D2  73
+                        <br> #define NOTE_DS2 78
+                        <br> #define NOTE_E2  82
+                        <br> #define NOTE_F2  87
+                        <br> #define NOTE_FS2 93
+                        <br> #define NOTE_G2  98
+                        <br> #define NOTE_GS2 104
+                        <br> #define NOTE_A2  110
+                        <br> #define NOTE_AS2 117
+                        <br> #define NOTE_B2  123
+                        <br> #define NOTE_C3  131
+                        <br> #define NOTE_CS3 139
+                        <br> #define NOTE_D3  147
+                        <br> #define NOTE_DS3 156
+                        <br> #define NOTE_E3  165
+                        <br> #define NOTE_F3  175
+                        <br> #define NOTE_FS3 185
+                        <br> #define NOTE_G3  196
+                        <br> #define NOTE_GS3 208
+                        <br> #define NOTE_A3  220
+                        <br> #define NOTE_AS3 233
+                        <br> #define NOTE_B3  247
+                        <br> #define NOTE_C4  262
+                        <br> #define NOTE_CS4 277
+                        <br> #define NOTE_D4  294
+                        <br> #define NOTE_DS4 311
+                        <br> #define NOTE_E4  330
+                        <br> #define NOTE_F4  349
+                        <br> #define NOTE_FS4 370
+                        <br> #define NOTE_G4  392
+                        <br> #define NOTE_GS4 415
+                        <br> #define NOTE_A4  440
+                        <br> #define NOTE_AS4 466
+                        <br> #define NOTE_B4  494
+                        <br> #define NOTE_C5  523
+                        <br> #define NOTE_CS5 554
+                        <br> #define NOTE_D5  587
+                        <br> #define NOTE_DS5 622
+                        <br> #define NOTE_E5  659
+                        <br> #define NOTE_F5  698
+                        <br> #define NOTE_FS5 740
+                        <br> #define NOTE_G5  784
+                        <br> #define NOTE_GS5 831
+                        <br> #define NOTE_A5  880
+                        <br> #define NOTE_AS5 932
+                        <br> #define NOTE_B5  988
+                        <br> #define NOTE_C6  1047
+                        <br> #define NOTE_CS6 1109
+                        <br> #define NOTE_D6  1175
+                        <br> #define NOTE_DS6 1245
+                        <br> #define NOTE_E6  1319
+                        <br> #define NOTE_F6  1397
+                        <br> #define NOTE_FS6 1480
+                        <br> #define NOTE_G6  1568
+                        <br> #define NOTE_GS6 1661
+                        <br> #define NOTE_A6  1760
+                        <br> #define NOTE_AS6 1865
+                        <br> #define NOTE_B6  1976
+                        <br> #define NOTE_C7  2093
+                        <br> #define NOTE_CS7 2217
+                        <br> #define NOTE_D7  2349
+                        <br> #define NOTE_DS7 2489
+                        <br> #define NOTE_E7  2637
+                        <br> #define NOTE_F7  2794
+                        <br> #define NOTE_FS7 2960
+                        <br> #define NOTE_G7  3136
+                        <br> #define NOTE_GS7 3322
+                        <br> #define NOTE_A7  3520
+                        <br> #define NOTE_AS7 3729
+                        <br> #define NOTE_B7  3951
+                        <br> #define NOTE_C8  4186
+                        <br> #define NOTE_CS8 4435
+                        <br> #define NOTE_D8  4699
+                        <br> #define NOTE_DS8 4978
+                        </span>
+                    </code>
+                   
+              </div>
+            </div>
+            <div class="col s12 center-align">
+               <a href="https://drive.google.com/file/d/1udHp4hiRL20kuN7xMVkPr7KGI5E0kJSA/view?usp=sharing"  target="_blank"  class="waves-effect waves-light btn blue darken-1 center-align center">Ver código fuente</a></div>
+           
+      </div>   
+    </div>
+  </div>
+  
+    
+ <!-- FOTO 5 -->     
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/5.jpeg" alt="ARDUINO"></div>
+  </div>
+    
+ <!-- EXPLICACION FUNCIONAMIENTO -->     
+  <div class="container scrollspy" id="Explicacion">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">offline_bolt</i>
+                    </h2>
+                    <h4>Funcionamiento</h4>
+                    <p class="center-align">La máquina de hacer pompas tiene dos modos de funcionamiento. Con un botón se conseguirá una única ejecución y con la otra es conseguirá que el brazo esté continuamente cargando el pompero y haciendo pompas hasta que sea detenido, para lo que habrá que pulsar de nuevo dicho botón cuando se encienda el led rojo al final de carrera.</p> 
+                    <p class="center-align">Antes de permitir iniciar la ejecución, el sensor de ultrasonidos se asegura de que el recipiente esté cargado y, si no es así, mantiene encendido el led rojo indicando que no se puede arrancar. Así mismo no atenderá el pulsado de los botones. <p class="center-align">
+                        Si pulsamos el botón de ejecución en bucle, sonará un pitido confirmándonos la selección. A continuación, el brazo bajará el pompero, introduciéndolo en el recipiente y lo volverá a levantar cargado. Una vez esté arriba se desplazará lateralmente hasta ponerlo a la altura del ventilador y volverá a bajarlo para que quede frente a éste. 
+                        </p>
+                    <p class="center-align">
+                        El ventilador se encenderá y sonará la melodía de Juego de Tronos mientras divertidas pompas de jabón surgen para regocijo de todos los presentes. 
+                        Al finalizar la melodía, el ventilador se detendrá, el brazo subirá y retornará a la posición original.
+                        
+                        </p><p class="center-align">
+                            En este momento, se encenderá durante un breve periodo el led rojo a la vez que el led verde. Será el momento, antes de que vuelva a apagarse, en el que tendremos que volver a pulsar el botón de ejecución continua si queremos que se detenga. De no ser así, pasados 2 segundos se volverá a iniciar otro ciclo.
+                            </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- VIDEO FUNCIONAMIENTO  --> 
+  <div class="section black scrollspy" id="Videos">
+    <div class="row center container section no-pad-bot">
+      <div class="col s12 section no-pad-bot">
+        <div class="section no-pad-bot"></div>
+          <div class="video-container">
+            <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen>
+            </iframe>         
+          </div>
+        </div>
+      <h5 class="header col s12 light center-align white-text">Vídeo de funcionamiento del proyecto</h5>
+    </div>
+  </div>
+
+     <!-- CONCLUSIONES Y RECOMENDACIONES --> 
+  <div class="container scrollspy" id="Conclusiones">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">extension</i>
+                    </h2>
+                    <h4>Conclusiones y recomendaciones</h4>
+                        <p class="center-align">Podemos concluir que el proyecto realizado nos muestra la versatilidad de la placa Arduino, que al ser una plataforma de código abierto esta permite hacer modificaciones a gusto del desarrollador. Es por ello que, en primera instancia, el proyecto no podría funcionar como uno lo espera y se deberán hacer ciertas modificaciones para su perfecta implementación.</p>
+                        <p class="center-align">Es recomendable que, para una mayor fluidez, se tenga un conocimiento básico de algunos componentes electrónicos, así como del lenguaje C++ que es el que usa Arduino como base. También recomendamos agregar un mejor buzzer para obtener un sonido mas definido. En próximos proyectos se podría integrar motores paso a paso, e incorporar un burbujero con mas orificios, de esta manera se podrían generar una mayor cantidad de burbujas por ciclo de funcionamiento.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+     <!-- FOTO 6 -->  
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/6.jpeg" alt="Unsplashed background img 3"></div>
+  </div>
+     <!-- REFERENCIAS icon--> 
+  <div class="container scrollspy" id="Referencias">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+            <div class="col s12">
+                
+               
+                
+                <div class="icon-block">
+                    <h2 class="center blue-text text-darken-2">
+                    <i class="material-icons">open_in_new</i>
+                    </h2>
+                    <h4>Referencias utilizadas</h4>
+                      <blockquote>
+                          Luis Torres. (2019, Febrero 1). PROYECTO ARDUINO: Maquina de pompas de jabón. Recuperado de http://tecnovadores.blogspot.com/2019/02/proyecto-arduino-maquina-de-pompas-de.html
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--FOOTER -->      
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Máquina de Burbujas</h5>
+          <p class="grey-text text-lighten-4" style="line-height: 1.7;">La máquina de burbujas genera burbujas al presionar uno de los dos botones, cuenta con un sensor ultrasonido que verificara la distancia del agua para burbujas, si el agua tiene una altura adecuada los servos moverán el brazo del burbujero hasta que se remoje en el agua y se coloque a la altura del ventilador. El ventilador se encenderá por unos segundos para generar las burbujas, luego de un tiempo se apagara, finalizando la secuencia.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <ul>
+          <li><a class="white-text" href="#Inicio">Inicio</a></li> 
+          <li><a class="white-text" href="#Integrantes">Integrantes</a></li> 
+          <li><a class="white-text" href="#Objetivo">Objetivo</a></li>
+          <li><a class="white-text" href="#Descripcion">Descripción</a></li>
+          <li><a class="white-text" href="#Componentes">Componentes</a></li>
+          <li><a class="white-text" href="#Diagrama">Diagrama</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="#Implementacion">Implementación</a></li>
+          <li><a class="white-text" href="#Codigo">Código</a></li>
+          <li><a class="white-text" href="#Explicacion">Explicación</a></li>
+          <li><a class="white-text" href="#Videos">Vídeo</a></li>
+          <li><a class="white-text" href="#Conclusiones">Conclusiones</a></li>
+          <li><a class="white-text" href="#Referencias">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      2019
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+
+   
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+    $('.scrollspy').scrollSpy();
+    
+  });
+
+  </script>
+      
+  </body>
+</html>
